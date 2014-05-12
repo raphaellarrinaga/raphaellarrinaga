@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- PORFOLIO -->
+    <picture id="pic01" type="website">
+        <name>Pixlart</name>
+        <description>PixLart is a fictive blog on pixel art. It is addressed to a francophone community, whatever the reader is informed or not on pixel art.
+        It is a work in progress.</description>
+        <link href="http://raphael-larrinaga.be/works/pixlart/">voir le site</link>
+        <url src="img/work/work_pixlart.png" />
+    </picture>
+    <picture id="pic02" type="website">
+        <name>Sexy Sushi</name>
+        <description>This is an official website proposition for Sexy Sushi. Sexy Sushi is an electro punk music group.
+        Their music is composed of synthesizer, electronic beats and retro sounds.</description>
+        <link href="http://raphael-larrinaga.be/works/sexysushi/" />
+        <url src="img/work/work_sexysushi.jpg" />
+    </picture>
+    <picture id="pic03" type="website">
+        <name>Belnet</name>
+        <description>Fictive recast of the Belnet website. Belnet provides a high speed internet access exclusively for universities,
+        colleges, research centers and public services in Belgium.</description>
+        <link href="">voir le site</link>
+        <url src="img/work/work_belnet.png" />
+    </picture>
+    <picture id="pic04" type="website">
+        <name>Chicago</name>
+        <description>This concept of interactive application presents the Chicago typeface and its designer Susan Kare.</description>
+        <link href="">voir le site</link>
+        <url src="img/work/work_chicago.gif" />
+    </picture>
+    <picture id="pic05" type="website">
+        <name>Data visualization</name>
+        <description>The following graph represents the second and third year students at the Haute Ecole Albert Jacquard.
+        It allows us to compare several data such as the gender, the school results,
+        the number of students renting a bedroom and the fraction of student through the different workstations.
+        This graph is resulting from the group work with Kevin Heins and Arnaud Dinunzio.</description>
+        <link href="">voir le site</link>
+        <url src="img/work/work_datavis.png" />
+    </picture>
+    <picture id="pic08" type="website">
+        <name>Elsa Mersayeva's portfolio, graphic designer.</name>
+        <description>Check back soon Elsa Z. Mersayeva's portfolio. Both HTML5 and Wordpress are used.</description>
+        <link href="http://shittystuff.be/">voir le site</link>
+        <url src="img/work/work_elsamersayeva.png" />
+    </picture>
+    <!-- STUFF -->
+    <picture id="pic06" type="website">
+        <name>Mini's logotype diversion.</name>
+        <description>Mini's logotype diversion.</description>
+        <link href="">voir le site</link>
+        <url src="img/work/work_mini.jpg" />
+    </picture>
+    <picture id="pic07" type="website">
+        <name>Sixpack's logotype diversion</name>
+        <description>Sixpack's logotype diversion which is a clothing brand.
+        It is in constant collaborations with graphic designers.</description>
+        <link href="">voir le site</link>
+        <url src="img/work/work_sixpack.jpg" />
+    </picture>
+    <picture id="pic09" type="website">
+        <name>Logotypes research</name>
+        <description>A logotype research for my own visual identity</description>
+        <link href="">voir le site</link>
+        <url src="img/work/work_portfoliologos.gif" />
+    </picture>
+    <picture id="pic10" type="website">
+        <name>Nasty Bear</name>
+        <description>This is an html5 website created for presenting Nasty Bear, a school project created for my Interactive Graphic Design lesson.
+        The teddy bear is, for the newborn, like a synonym for learning and discovering the senses. It is in a way the idea of the first contact with the world and the objects.
+        In this project, the sound discovering is more particularly tackled. Nasty Bear is a concept of a melodic object who offers the possibility to adult people of discovering a music compilation created specially for them.
+        </description>
+        <link href="http://raphael-larrinaga.be/works/nastybear/">voir le site</link>
+        <url src="img/work/work_nastybear.jpg" />
+    </picture>
+    <picture id="pic11" type="website">
+        <name>Inspirational People</name>
+        <description>This is a website created for presenting Inspirational People, a school project for which the word was presenting 50 influent people in our live. It was asked to present them by an interactive way too. I took this as an opportunity playing with Processing. I invite you to visit the website for more explanations and to discover the app.
+        </description>
+        <link href="http://raphael-larrinaga.be/works/inspirational-people/">voir le site</link>
+        <url src="img/work/work_insp-people.jpg" />
+    </picture>
+    <picture id="pic12" type="website">
+        <name>From the ghetto to a millionaire</name>
+        <description>This is a very basic website created for presenting a short sequence. The video talks about money and hip-hop. The goal of this project isn't to praise the parade or the benefits of money. What is raised is the speech's evolution of the actor of this movement about this subject. Particularily the rapper's one. All types and, of course, the sequence too, where created by myself.
+        </description>
+        <link href="http://raphael-larrinaga.be/works/from-the-ghetto/">voir le site</link>
+        <url src="img/work/work_from-the-ghetto.png" />
+    </picture>
+    <picture id="pic13" type="website">
+        <name>Be Street online shop</name>
+        <description>Check out the Be Street online shop. Case of frontend development using the e-commerce platform BigCartel and some Ux advice. Design made by Avna.
+        </description>
+        <link href="http://bestreet.bigcartel.com">voir le site</link>
+        <url src="img/work/work_be-street.jpg" />
+    </picture>
+    <picture id="pic14" type="website">
+        <name>Extranet 4.0 / TFE at Heaj</name>
+        <description>Here's my end of study project done with Arnaud Di Nunzio (also called Aqro). Case of UX Study, design, development and more fun. To be logged, please enter "prof" or "student" as username.
+        </description>
+        <link href="http://raphael-larrinagabalseiro.infographie-heaj.be/dashboard/">voir le site</link>
+        <url src="img/work/work_extranet.png" />
+    </picture>
+
+</root>

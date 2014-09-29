@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Labo // 3d text</title>
+	<style type="text/css">
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+/*
+	background: -webkit-gradient( linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(#fefefe) );
+	background: -moz-linear-gradient( 0, rgba(255, 255, 255, 0), #fefefe );
+*/
+	background: -webkit-gradient( linear, 0 0, 100% 0, from(#78de63), to(#9de78d) );
+	background: -moz-linear-gradient( 0, rgba(255, 255, 255, 0), #fefefe );
+}
+
+#back-btn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #777;
+	text-decoration: none;
+	font: 11px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+             "Luxi Sans", Arial, sans-serif;
+	transition: color .2s ease-out;
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+}
+	#back-btn:hover{color: #111;}
+
+#container{
+	margin-top: 50px;
+	text-align: center;
+}
+
+p{
+	font: bold 90px Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+	position: relative;
+	display: block;
+	color: #fff;
+	text-shadow:
+		0 1px 0 #ccc,
+		0 2px 0 #c9c9c9,
+		0 3px 0 #bbb,
+		0 4px 0 #b9b9b9,
+		0 5px 0 #aaa,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+        0 20px 20px rgba(0,0,0,.15);
+}
+
+p.small{
+	font-size: 28px;
+}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>3D Text</p>
+		<p class="small">and other things</p>
+	</div>
+	<a href="../index.html" id="back-btn">Back</a>
+</body>
+</html>

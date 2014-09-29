@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title>Labo // Loupiotte</title>
+	
+	<style type="text/css">
+
+#back-btn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #777;
+	text-decoration: none;
+	font: 11px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", Arial, sans-serif;
+	transition: color .2s ease-out;
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+}
+	#back-btn:hover{color: #111;}
+
+#container{
+	left: 48%;
+	position: absolute;
+}
+
+.voyant{
+	float: left;
+}
+
+.voyant + .voyant{
+	margin-left: 12px;
+}
+
+.voyant p{
+	height: 7px;
+ 	width: 7px;
+ 	-moz-border-radius:75px;
+ 	-webkit-border-radius: 75px;
+ 	border: 1px solid #237b00;
+ 	-webkit-animation-name: greenPulse;
+	-webkit-animation-duration: 1100ms;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes greenPulse {
+	from { background-color: #5aae3f; -webkit-box-shadow: 0 0 3px 1px rgba(76,230,0,0),inset 0 1px 0 rgba(255,255,255,0.35); 
+ 	border: 1px solid #237b00;}
+	50% { background-color: #36d700; -webkit-box-shadow: 0 0 2px 1px rgba(76,230,0,0.87),inset 0 1px 0 rgba(179,234,160,0.75); border: 1px solid #4cb223;}
+	to { background-color: #5aae3f; -webkit-box-shadow: 0 0 3px 1px rgba(76,230,0,0),inset 0 1px 0 rgba(255,255,255,0.35); 
+ 	border: 1px solid #237b00;}
+}
+
+</style>
+</head>
+<body>
+	<div id="container" class="clearfix">
+		<span class="voyant"><p></p></span>
+		<span class="voyant"><p></p></span>
+		<span class="voyant"><p></p></span>
+		<span class="voyant"><p></p></span>
+	</div>
+	<a href="index.html" id="back-btn">Back</a>
+</body>
+</html>

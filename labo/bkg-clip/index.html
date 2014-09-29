@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Labo // bkg-clip</title>
+	<link href='http://fonts.googleapis.com/css?family=Rochester|Anton' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	
+
+/* Reset
+-------------------------------------------------------------- */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0;margin-bottom:1.4em;}
+caption,th,td{text-align:left;font-weight:400;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:;}
+a img{border:none;}
+
+/* Page
+-------------------------------------------------------------- */
+
+body		{color: #2a4f54;text-align: center;background-color: #4a8d97;background-image: url(grunge.jpg);}
+#container	{margin: 0px auto 35px;width:660px; padding-top: 60px;}
+.main 		{ font-family: 'Anton',Lucida, sans-serif;text-transform: uppercase;line-height: .9;}
+.explanation{margin-top: 20px; font: italic 14px "Helvetica Neue", Helvetica, Arial, sans-serif;}
+a           { color: #2a4f54; text-decoration: none; -webkit-transition: color .6s linear;}
+a:hover     { color: #fff; -webkit-transition: color .1s linear;}
+
+.itried{
+	font-size: 38px;
+}
+.css{
+	font-size: 156px;
+	letter-spacing: 5px;
+	line-height: 1;
+}
+.itworked{
+	font: italic 36px/0 'Rochester', cursive;
+	text-transform: lowercase;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+.hoo{
+	font-size: 198px;
+	letter-spacing: 5px;
+	line-height: 1;
+	margin-top: 25px;
+}
+.view{
+	font-size: 41px;
+	margin-top: 10px;
+}
+.hoo, .css {
+	text-shadow: #4a8d97 3px 3px 0;
+}
+.line-left, .line-right{
+	border-bottom: 2px solid #2a4f54;
+	width: 200px;
+	display: inline-block;
+	margin-bottom: -30px;
+}
+.line-left{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.line-right{
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.css:after{
+	content:"CSS Three";
+	margin-top: -146px;
+	margin-left: 9px;
+}
+.hoo:after{
+	content:"hooray!";
+	margin-top: -188px;
+	margin-left: 13px;
+}
+.css:after, .hoo:after{
+	background-image: url(crosshatch.png);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	z-index: -5;display: block;
+	text-shadow: none;
+}
+
+	</style>
+</head>
+<body>
+	<div id="container"> 
+	<div class="main"> 
+		<div class="itried">I tried to replicate a recent design using</div> 
+		<div class="css">CSS Three</div> 
+		<span class="line-left"></span><div class="itworked">&amp; it worked</div><span class="line-right"></span> 
+		<div class="hoo">hooray!</div> 
+		<div class="view"><a href="http://trentwalton.com/2010/04/06/css3-background-clip-font-face/">View the code</a> &bull; <a href="http://twitter.com/trentwalton">Follow him on Twitter</a></div> 
+	</div>	
+	<div class="explanation">This background-clip: text; property currently only works on -webkit browsers like <a href="http://www.apple.com/safari/download/">Safari</a> or <a href="http://www.google.com/chrome">Chrome</a>.</div>	
+	</div>
+</body>
+</html>

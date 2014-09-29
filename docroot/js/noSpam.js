@@ -1,6 +1,6 @@
 $(function(){
 
-  $('.email').each(function(i){
+  $('.mail-link').each(function(i){
 
     var protectedEmail = $(this).html();
     protectedEmail = protectedEmail.replace(" [at] ","@");
@@ -11,5 +11,5 @@ $(function(){
       .replaceWith("<a href=\"mailto:"+$(this).text()+"\">"+$(this).text()+"</a>");
 
   });
-  
+
 });

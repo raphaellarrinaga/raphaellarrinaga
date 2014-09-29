@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Labo // 3d text</title>
+	<style type="text/css">
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+	background: -webkit-gradient( linear, 0 0, 100% 0, from(rgba(255, 255, 255, 0)), to(#fefefe) );
+	background: -moz-linear-gradient( 0, rgba(255, 255, 255, 0), #fefefe );
+}
+
+#back-btn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #777;
+	text-decoration: none;
+	font: 11px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode",
+             "Luxi Sans", Arial, sans-serif;
+	transition: color .2s ease-out;
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+}
+	#back-btn:hover{color: #111;}
+
+#container{
+	margin-top: 30px;
+	text-align: center;
+}
+
+p{
+	font: 200px Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+	position: relative;
+	display: inline;
+	letter-spacing: -5px;
+	color: rgba(0, 0, 255, .5);
+}
+
+p:after{
+	content: "Hello";
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	color: rgba(255, 0, 0, .5);
+}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<p>Hello</p>
+	</div>
+	<a href="index.html" id="back-btn">Back</a>
+</body>
+</html>

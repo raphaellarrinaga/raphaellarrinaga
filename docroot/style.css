@@ -19,218 +19,218 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 
 @font-face { font-family: 'gnuolane_rg'; font-weight: bold; src: url('font/gnuolane_rg.tf'); }
 
 /* ---
  MAIN
---- */
+ --- */
 
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    color:#312c32;
-    /*background: url(img/bg3.gif) repeat;*/
-    /*background-color: #00aeef;*/
+ body {
+  font-family: Helvetica, Arial, sans-serif;
+  color:#312c32;
+  /*background: url(img/bg3.gif) repeat;*/
+  /*background-color: #00aeef;*/
 }
 
 body.topline {
-    background: url(img/top1.gif) repeat-x;
+  background: url(img/top1.gif) repeat-x;
 }
 
 #container {
-    margin: 0 auto;
-    padding: 40px 0 0;
-    width: 960px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  width: 960px;
 }
 
 a {
-    text-decoration: none;
-    color: #312c32;
+  text-decoration: none;
+  color: #312c32;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 
 /* ----
  HEADER
------ */
+ ----- */
 
-#header {
-    height: 100px;
-    /*margin: 0px 20px 20px;*/
+ #header {
+  height: 100px;
+  /*margin: 0px 20px 20px;*/
 }
 
 h1 {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 h1 a {
-    display: block;
-    text-indent: -1000px;
-    background: url(img/logo9.png) no-repeat left;
-    height: 70px;
-    width: 126px;
+  display: block;
+  text-indent: -1000px;
+  background: url(img/logo9.png) no-repeat left;
+  height: 70px;
+  width: 126px;
 }
-    h1 a:hover {background-position: -126px 0;}
+h1 a:hover {background-position: -126px 0;}
 
 
 /*---------
  NAVIGATION
----------*/
+ ---------*/
 
-/*---------  mainMenu  ---------*/
+ /*---------  mainMenu  ---------*/
 
-#mainMenu, #leftMenu, h2 {
-    font-family: Helvetica, Arial, sans-serif;
-    letter-spacing: 0px;
+ #mainMenu, #leftMenu, h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0px;
 }
 
 #leftMenu .nav, #leftMenu .social, #leftMenu .bkgselector {
-    font-weight: bold;
-    letter-spacing: 0px;
+  font-weight: bold;
+  letter-spacing: 0px;
 }
 
 #mainMenu {
-    position: relative;
-    width: 958px;
-    line-height: 60px;
-    font-weight: bold;
+  position: relative;
+  width: 958px;
+  line-height: 60px;
+  font-weight: bold;
 }
 
 #mainMenu li {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 #mainMenu li strong {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #mainMenu a {
 	letter-spacing: 0px;
-    color: #312c32;
-    font-size: 108px;
+  color: #312c32;
+  font-size: 108px;
 }
 
 /*---------  leftMenu  ---------*/
 
 #leftMenu {
-    min-height: 450px;
+  min-height: 450px;
 }
 
 #leftMenu {
-    height: 100%;
-    width: 130px;
-    overflow:hidden;
-    float: left;
-    white-space: nowrap;
-    letter-spacing: 1px;
+  height: 100%;
+  width: 130px;
+  overflow:hidden;
+  float: left;
+  white-space: nowrap;
+  letter-spacing: 1px;
 }
 
 #leftMenu .nav li a {
-    font-size: 18px;
-    line-height: 21px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 #leftMenu a.visited, a.bkgselector:hover {
-    color: #FD3F92;
+  color: #FD3F92;
 }
 
 a.bkgselector {
-    font-size: 14px;
-    font-weight: normal;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .social {
-    margin-top: 40px;
-    margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .social li a:hover {
-    color: #33CCFF;
+  color: #33CCFF;
 }
 
 .social li+li a:hover {
-    color: #D70019;
+  color: #D70019;
 }
 
 .social li+li+li a:hover {
-    color: #9FC54E;
+  color: #9FC54E;
 }
 
 .social li {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 
 /* -----
  CONTENT
------ */
+ ----- */
 
-#corps {
-    width: 960px;
-    position: relative;
+ #corps {
+  width: 960px;
+  position: relative;
 }
 
 #content {
-    top: 0;
-    position: absolute;
-    margin-left: 958px;
-    background: url(img/ligneVerticale2.gif) repeat-y left;
-    width: 830px;
-    padding-left: 40px;
-    font-size: 12px;
-    line-height: 16px;
+  top: 0;
+  position: absolute;
+  margin-left: 958px;
+  background: url(img/ligneVerticale2.gif) repeat-y left;
+  width: 830px;
+  padding-left: 40px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 #content h2 {
 
-    font-size: 108px;
-    line-height: 86px;
-    padding-bottom: 40px;
-    font-weight: bold;
+  font-size: 108px;
+  line-height: 86px;
+  padding-bottom: 40px;
+  font-weight: bold;
 }
 
 /* -------
  Portfolio
-------- */
+ ------- */
 
-#portfolio h2 {
-    margin-left: -6px;
+ #portfolio h2 {
+  margin-left: -6px;
 }
 
 #portfolio {
-    overflow: hidden;
-    padding-bottom: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
 #portfolio img , #stuff img{
-    margin-bottom: -4px;
+  margin-bottom: -4px;
 }
 
 .workPreview {
-    overflow: hidden;
-    height: 220px;
-    width: 260px;
-    float: left;
-    position: relative;
+  overflow: hidden;
+  height: 220px;
+  width: 260px;
+  float: left;
+  position: relative;
 }
 
 .workPreview>a {
-    position: absolute;
-    height: 180px;
-    width: 260px;
+  position: absolute;
+  height: 180px;
+  width: 260px;
 }
 
 .pic01>a {background: url(img/work/workpreview_pixlart2.jpg) no-repeat;}
@@ -247,59 +247,59 @@ a.bkgselector {
 .pic12>a {background: url(img/work/workpreview_from-ghetto.png) no-repeat;}
 .pic13>a {background: url(img/work/workpreview_be-street.png) no-repeat;}
 .pic14>a {background: url(img/work/workpreview_extranet.png) no-repeat;}
-	.workPreview>a:hover {background-position: right top;}
+.workPreview>a:hover {background-position: right top;}
 
 .workPreview a+a {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 
 .description {
-    margin-top: 180px;
-    height: 30px;
-    background: url(img/line.gif) repeat-x bottom;
-    padding: 10px 10px 0 10px;
+  margin-top: 180px;
+  height: 30px;
+  background: url(img/line.gif) repeat-x bottom;
+  padding: 10px 10px 0 10px;
 }
 
 .description h3 {
-    font-weight: bold;
-    font-size: 18px;
-    display: inline;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline;
 }
 
 .description a+a {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .description a {
-    float: right;
+  float: right;
 }
-    .description a:hover { color: #FD3F92; text-decoration: underline;}
-  
+.description a:hover { color: #FD3F92; text-decoration: underline;}
+
 .preview a{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #portfolioWrap, #stuffWrap{
-    overflow: hidden;
-    width: 1560px;
-    position: relative;
+  overflow: hidden;
+  width: 1560px;
+  position: relative;
 }
 
 .galleryLeft, .galleryRight{
-    width: 780px;
-    float: left;    
+  width: 780px;
+  float: left;
 }
 
 .galleryRight>a:hover {color: blue;}
 
 .galleryRight h3 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .galleryRight p {
-    width: 390px;
-    padding-bottom: 20px;
-	float: left;
+  width: 390px;
+  padding-bottom: 20px;
+  float: left;
 }
 
 .galleryRight > a.back-btn{
@@ -310,7 +310,7 @@ a.bkgselector {
 	position: relative;
 	z-index: 2;
 }
-	.galleryRight > a.back-btn:hover { color: #FD3F92;}
+.galleryRight > a.back-btn:hover { color: #FD3F92;}
 
 .galleryRight > h3,
 .galleryRight > p{
@@ -331,62 +331,62 @@ a.online-link{
 	position: absolute;
 	top: 0;
 	right: 0;
-*/
-	float: right;
+  */
+  float: right;
 }
-	a.online-link:hover { color: #FD3F92; text-decoration: underline;}
+a.online-link:hover { color: #FD3F92; text-decoration: underline;}
 
 /* -------
     Stuff
-------- */
+    ------- */
 
-#stuff {
-    overflow: hidden;
-    padding-bottom: 20px;
-}
+    #stuff {
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
 
-.stuffWrap {
-    overflow: hidden;
-    width: 1560px;
-}
+    .stuffWrap {
+      overflow: hidden;
+      width: 1560px;
+    }
 
 /* -------
     About
-------- */
+    ------- */
 
-#about {
-    background: url(img/loser.png) no-repeat 90% 50%;
-}
+    #about {
+      background: url(img/loser.png) no-repeat 90% 50%;
+    }
 
-acronym {
-    border-bottom:1px dotted;
-    cursor: help;
-}
+    acronym {
+      border-bottom:1px dotted;
+      cursor: help;
+    }
 
-.aboutWrap {
-    width: 460px;
-}
+    .aboutWrap {
+      width: 460px;
+    }
 
-#about h3{
-    padding-bottom: 20px;
-}
+    #about h3{
+      padding-bottom: 20px;
+    }
 
-#about p {
-    padding-bottom: 20px;
-}
+    #about p {
+      padding-bottom: 20px;
+    }
 
-#about a {
-    font-weight: bold;
-}
+    #about a {
+      font-weight: bold;
+    }
     #about a:hover { color: #FD3F92; text-decoration: underline;}
 
 
 /* -------
  Contact
-------- */
+ ------- */
 
-#contact h2 {
-    margin-left: -5px;
+ #contact h2 {
+  margin-left: -5px;
 }
 /*
 .contactWrap {
@@ -394,108 +394,108 @@ acronym {
 }
 */
 #contact ul, h3 {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #contact .colB ul li {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 #contact h3 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .colA {
-    margin-right: 160px;
+  margin-right: 160px;
 }
 
 #contact .colA li {
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 }
 
-#contact .colB a:hover {
-    color: #FD3F92;
+#contact a:hover {
+  color: #FD3F92;
 }
 
 .column {
-    vertical-align: top;
-    display:inline-block;
-    padding-bottom: 40px;
+  vertical-align: top;
+  display:inline-block;
+  padding-bottom: 40px;
 }
 
 #contactForm {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 input, textarea {
-    margin-top: 0px;
-    margin-left: 30px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #828282;
-    border: none;
-    width: 200px;
-    font-size: 12px;
-    background: url(img/formLine.gif) bottom repeat-x;
+  margin-top: 0px;
+  margin-left: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #828282;
+  border: none;
+  width: 200px;
+  font-size: 12px;
+  background: url(img/formLine.gif) bottom repeat-x;
 }
 
 #contactForm label {
-    float:left;
-    clear:left;
-    cursor: pointer;
+  float:left;
+  clear:left;
+  cursor: pointer;
 }
 
 #contact textarea {
-    min-height: 120px;
+  min-height: 120px;
 }
 
 #contact .colA ol li+li+li+li input {
 }
 
 input.button{
-    font-weight: bold;
-    font-size:18px;
-    cursor: pointer;
-    margin-left: 99px;
-    width: 201px;
-    text-align: left;
+  font-weight: bold;
+  font-size:18px;
+  cursor: pointer;
+  margin-left: 99px;
+  width: 201px;
+  text-align: left;
 }
 input.button:hover {color: #FD3F92;}
 
 .error {
-    color: #FD3F92;
-    font-weight: bold;
-    margin-top: 20px;
+  color: #FD3F92;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 #result {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 
 /* --------
  javascript
--------- */
+ -------- */
 
-.hide{
-    display: none;
+ .hide{
+  display: none;
 }
 
 #corps.js {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #leftMenu.js {
-    width: 0px;
+  width: 0px;
 }
 
 #content.js {
-    position: relative;
+  position: relative;
 }
 
 #konamicat {
-    margin: 0 auto;
-    position: absolute;
-    top:40px;
-    background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  top:40px;
+  background-color: white;
 }

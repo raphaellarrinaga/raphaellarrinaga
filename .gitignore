@@ -12,13 +12,15 @@
 sftp-config.json
 
 
-### OSX ###
+
+# Ignore OS generated files
 .DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -34,3 +36,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Ignore Node, Sass, CSS related files
+node_modules
+npm-debug.log
+.sass-cache
+css/*.map

@@ -1,11 +1,6 @@
 # Raphael Larrinaga
 
-HTML5 static page
-
-## Gulp tasks
-
-- `gulp` aka `gulp watch` : generates a server at `http://localhost:8080/` ready for livereload with chrome extension
-- `gulp sass:build` : compile css, lint js
+That branch contains the archived content of labo. subdomain with html/css experiments.
 
 ## Updates
 

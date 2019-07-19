@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:11.15.0 # Gulp 4 fails with node 12.
+
+    steps:
+      - checkout
+
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@latest'
+
+      - restore_cache: # special step to restore the dependency cache
+          # Read about caching dependencies: https://circleci.com/docs/2.0/caching/
+          key: dependency-cache-{{ checksum "package.json" }}
+
+      - run:
+          name: Install npm modules
+          command: npm install
+
+      - save_cache: # special step to save the dependency cache with the `package.json` cache key template
+          key: node-theme-v2-{{ checksum "./package.json" }}
+          paths:
+            - node_modules
+
+      - run:
+          name: Build project
+          command: npm run production

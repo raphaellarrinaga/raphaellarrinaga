@@ -104,10 +104,10 @@
 
   exports.watch = watchFiles;
 
-  const build = gulp.series(compileHtml, compileCSS, copyV1);
-  exports.build = build;
+  const dist = gulp.series(compileHtml, compileCSS, copyV1);
+  exports.dist = dist;
 
   // Global task: $ gulp.
-  // Same as build. Has to be defined.
-  exports.default = build
+  // Same as dist. Has to be defined.
+  exports.default = dist
 }());

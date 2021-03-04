@@ -5,8 +5,8 @@
   "author": "Raphaël Larrinaga",
   "main": "gulpfile.js",
   "scripts": {
-    "production": "NODE_ENV=production gulp build",
-    "development": "NODE_ENV=production gulp build",
+    "production": "NODE_ENV=production gulp dist",
+    "development": "NODE_ENV=development gulp dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

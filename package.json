@@ -4,7 +4,11 @@
   "description": "Raphael Larrinaga website",
   "author": "Raphaël Larrinaga",
   "main": "gulpfile.js",
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "production": "NODE_ENV=production gulp dist",
     "development": "NODE_ENV=development gulp dist",
     "test": "echo \"Error: no test specified\" && exit 1"

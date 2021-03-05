@@ -22,8 +22,16 @@
 
   const paths = {
     styles: {
-      src: './src/sass/**/*.scss',
+      src: './src/assets/sass/**/*.scss',
       dist: './dist/assets/css'
+    },
+    files: {
+      src: './src/assets/files/**/*',
+      dist: './dist/assets/files'
+    },
+    img: {
+      src: './src/assets/img/**/*',
+      dist: './dist/assets/img'
     },
     html: {
       src: './src/index.html',
@@ -46,6 +54,22 @@
   }
 
   exports.copyV1 = copyV1;
+
+  function images() {
+    return gulp
+      .src(paths.img.src)
+      .pipe(gulp.dest(paths.img.dist));
+  }
+
+  exports.images = images;
+
+  function files() {
+    return gulp
+      .src(paths.files.src)
+      .pipe(gulp.dest(paths.files.dist));
+  }
+
+  exports.files = files;
 
   function compileHtml() {
     return gulp
@@ -104,7 +128,7 @@
 
   exports.watch = watchFiles;
 
-  const dist = gulp.series(compileHtml, compileCSS, copyV1);
+  const dist = gulp.series(compileHtml, compileCSS, images, files, copyV1);
   exports.dist = dist;
 
   // Global task: $ gulp.

@@ -47,14 +47,6 @@
     })(error);
   };
 
-  function copyV1() {
-    return gulp
-      .src('./src/v1/**/*')
-      .pipe(gulp.dest('./dist/v1'));
-  }
-
-  exports.copyV1 = copyV1;
-
   function images() {
     return gulp
       .src(paths.img.src)
@@ -123,12 +115,13 @@
 
   function watchFiles() {
     livereload.listen();
-    gulp.watch(paths.sass, watchCSS);
+    gulp.watch(paths.html.src, compileHtml);
+    gulp.watch(paths.styles.src, watchCSS);
   }
 
   exports.watch = watchFiles;
 
-  const dist = gulp.series(compileHtml, compileCSS, images, files, copyV1);
+  const dist = gulp.series(compileHtml, compileCSS, images, files);
   exports.dist = dist;
 
   // Global task: $ gulp.

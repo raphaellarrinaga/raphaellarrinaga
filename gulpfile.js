@@ -10,7 +10,7 @@
     sass = require('gulp-sass'),
     autoprefixer = require('autoprefixer'),
     combineMq = require('gulp-combine-mq'),
-    livereload = require('gulp-livereload'),
+    browserSync = require('browser-sync').create(),
     postcss = require('gulp-postcss'),
     htmlmin = require('gulp-htmlmin'),
     notify = require('gulp-notify'),
@@ -72,8 +72,6 @@
 
   exports.compileHtml = compileHtml;
 
-  // @todo group compile&watch css.
-  // Maybe see package.json npm scripts.
   function compileCSS() {
     return gulp
       .src(paths.styles.src)
@@ -108,18 +106,37 @@
       .pipe(postcss(processors))
       .pipe(plumber(reportError))
       .pipe(gulp.dest(paths.styles.dist))
-      .pipe(livereload());
+      .pipe(browserSync.stream());
   }
 
   exports.watchCSS = watchCSS;
 
+  function reload(done) {
+    server.reload();
+    done();
+  }
+
+  function serve(done) {
+    browserSync.init({
+      server: {
+        baseDir: './dist',
+      },
+      ui: false,
+      open: false,
+      injectChanges: true,
+    });
+    done();
+  }
+
   function watchFiles() {
-    livereload.listen();
     gulp.watch(paths.html.src, compileHtml);
     gulp.watch(paths.styles.src, watchCSS);
   }
 
   exports.watch = watchFiles;
+  const watch = watchFiles;
+  const dev = gulp.series(serve, watch);
+  exports.dev = dev;
 
   const dist = gulp.series(compileHtml, compileCSS, images, files);
   exports.dist = dist;

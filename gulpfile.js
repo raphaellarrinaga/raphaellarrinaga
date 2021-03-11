@@ -111,11 +111,6 @@
 
   exports.watchCSS = watchCSS;
 
-  function reload(done) {
-    server.reload();
-    done();
-  }
-
   function serve(done) {
     browserSync.init({
       server: {

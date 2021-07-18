@@ -6,15 +6,14 @@
   // eslint-disable-next-line strict
   'use strict';
 
-  const gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('autoprefixer'),
-    combineMq = require('gulp-combine-mq'),
-    browserSync = require('browser-sync').create(),
-    postcss = require('gulp-postcss'),
-    htmlmin = require('gulp-htmlmin'),
-    notify = require('gulp-notify'),
-    plumber = require('gulp-plumber');
+  const gulp = require('gulp');
+  const sass = require('gulp-sass');
+  const autoprefixer = require('autoprefixer');
+  const browserSync = require('browser-sync').create();
+  const postcss = require('gulp-postcss');
+  const htmlmin = require('gulp-htmlmin');
+  const notify = require('gulp-notify');
+  const plumber = require('gulp-plumber');
 
   const processors = [
     autoprefixer(),

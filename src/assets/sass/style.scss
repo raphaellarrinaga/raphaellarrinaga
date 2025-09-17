@@ -1,0 +1,77 @@
+// Include normalize scss
+// @see https://github.com/JohnAlbin/normalize-scss
+// @import "normalize/import-now";
+// @use 'normalize/variables';
+// @use 'normalize/vertical-rhythm';
+// @use 'normalize/normalize-mixin';
+@use 'normalize';
+
+$page-color: #fefefe;
+$text-color: #111;
+$pink: #FD3F92;
+
+// Globals
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+body {
+  background: $page-color;
+  box-sizing: border-box;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  font-family:'Nunito Sans', sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  min-height: 100vh;
+  padding: 5vw 7vw 1vw;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+
+  span {
+    font-weight:normal
+  }
+}
+
+a {
+  background:linear-gradient(to top, #FD3F92 80%, #FD3F92 100%) no-repeat;
+  background-size:0 1px;
+  background-position:0 100%;
+  color:#FD3F92;
+  text-decoration:none;
+  transition:all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:focus,
+  &:hover {
+    background-size:100% 1px;
+    outline:none;
+    text-decoration:none
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+main {
+  p {
+    margin-top:0
+  }
+}

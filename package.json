@@ -1,0 +1,38 @@
+{
+  "name": "raphaellarrinaga",
+  "version": "1.99.0",
+  "description": "Raphael Larrinaga website",
+  "author": "Raphaël Larrinaga",
+  "main": "gulpfile.js",
+  "scripts": {
+    "production": "NODE_ENV=production gulp dist",
+    "development": "NODE_ENV=development gulp dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "@types/gulp-imagemin": "^8.0.6",
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-newer": "^1.4.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^11.0.1"
+  }
+}

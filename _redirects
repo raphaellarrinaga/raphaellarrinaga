@@ -1,0 +1,3 @@
+# Redirects from what the browser requests to what we serve
+# @see https://docs.netlify.com/manage/routing/redirects/overview/
+https://jardins.raphlarri.com/* https://larrinaga-jardins.be/:splat 301!

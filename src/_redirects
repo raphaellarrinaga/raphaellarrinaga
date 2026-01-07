@@ -1,9 +1,4 @@
 # Redirects from what the browser requests to what we serve
 # @see https://docs.netlify.com/manage/routing/redirects/overview/
 # @see https://docs.netlify.com/manage/routing/redirects/redirect-options/
-# old : https://jardins.raphlarri.com/* https://larrinaga-jardins.be/:splat 301!
-[[redirects]]
-  from = "https://jardins.raphlarri.com"
-  to = "https://larrinaga-jardins.be"
-  status = 301
-  force = true
+https://jardins.raphlarri.com/* https://larrinaga-jardins.be/:splat 301!

@@ -40,6 +40,10 @@
       src: './src/index.html',
       dist: './dist/',
     },
+    redirects: {
+      src: './src/_redirects',
+      dist: './dist/'
+    }
   };
 
   // Error notifications with notify.
@@ -49,6 +53,13 @@
       message: error.toString()
     })(error);
   };
+
+  function copyRedirects() {
+    return gulp
+      .src(paths.redirects.src, { allowEmpty: true }) // allowEmpty évite une erreur si le fichier manque
+      .pipe(gulp.dest(paths.redirects.dist));
+  }
+  exports.copyRedirects = copyRedirects;
 
   async function images() {
     const imagemin = (await import("gulp-imagemin")).default;
@@ -160,7 +171,7 @@
   const dev = gulp.series(serve, watch);
   exports.dev = dev;
 
-  const dist = gulp.series(compileHtml, compileCSS, images, files);
+  const dist = gulp.series(compileHtml, compileCSS, images, files, copyRedirects);
   exports.dist = dist;
 
   // Global task: $ gulp.

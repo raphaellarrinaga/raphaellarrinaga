@@ -143,8 +143,7 @@
       .pipe(postcss(processors))
       .pipe(plumber(reportError))
       .pipe(gulp.dest(paths.styles.dist))
-      // .pipe(browserSync.stream());
-      // .pipe(browserSync.stream());
+      .pipe(browserSync.stream());
   }
 
   exports.watchCSS = watchCSS;
@@ -154,6 +153,7 @@
       server: {
         baseDir: './dist',
       },
+      port: 5000,
       ui: false,
       open: false,
       injectChanges: true,
@@ -162,7 +162,11 @@
   }
 
   function watchFiles() {
-    gulp.watch(paths.html.src, compileHtml);
+    // On surveille le HTML, on compile, PUIS on recharge
+    gulp.watch(paths.html.src, gulp.series(compileHtml, (done) => {
+      browserSync.reload();
+      done();
+    }));
     gulp.watch(paths.styles.src, watchCSS);
   }
 

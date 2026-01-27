@@ -1,0 +1,32 @@
+//
+//  Functions
+//
+
+// Remove the unit of a length
+// @param {Number} $number - Number to remove unit from
+// @return {Number} - Unitless number
+// @see https://css-tricks.com/snippets/sass/strip-unit-function/
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-unit($pxval);
+  }
+
+  $base: $px-base-font-size;
+  @if not unitless($base) {
+    $base: strip-unit($base);
+  }
+
+  @return ($pxval / $base) * 1rem;
+}
+
+@function rhythm($lines: 1, $font-size: 1rem, $line-height: $base-line-height) {
+  @return $lines * $font-size * $line-height;
+}

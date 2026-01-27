@@ -1,0 +1,122 @@
+// Mixins
+//
+
+// Media query
+// 1920x1080
+// 1536x864
+// 414x896
+// 390x844
+// 384x832
+// 375x812
+
+@mixin bp($breakpoint, $max: false) {
+  @if $max {
+    @media screen and (max-width: #{$breakpoint - 1px}) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+// Pseudo element
+// Create an empty css pseudo element. Reusable for, e.g., icons
+@mixin el($display, $width, $height) {
+  content: '';
+  display: $display;
+
+  @if $height {
+    height: $height;
+  }
+  @if $width {
+    width: $width;
+  }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// Buttons helpers
+//
+
+// Define simple button styles
+@mixin button($font-size: 1rem) {
+  appearance: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.61rem $font-size 0.58rem;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+@mixin button--default($font-size: 1rem) {
+  @include button($font-size);
+  // background-color: $button-bg-color;
+  background-color: var(--color-button-bg);
+  // border: 2px solid darken(var(--color-button-bg), 8%);
+  color: var(--color-button-text);
+  border-radius: 2rem;
+
+  &:visited {
+    // color: $button-text-color;
+  }
+
+  &:hover {
+    background-color: var(--color-button-bg-hover);
+    color: var(--color-button-text-hover);
+  }
+
+  &:focus{
+    box-shadow: inset 0 0 0 .1rem var(--color-button-bg-hover);
+    color: var(--color-button-text-hover);
+    outline: 0;
+  }
+}
+
+// No child margin
+// Keep vrhthm consistent avoiding children margins
+// $direction : top or bottom. Default: bottom
+@mixin no-child-margin($direction : "bottom") {
+  $child : "last";
+
+  @if $direction == "top" {
+    $child : "first";
+  }
+
+  &>*:#{$child}-child {
+    margin-#{$direction}: 0;
+
+    &>*:#{$child}-child {
+      margin-#{$direction}: 0;
+
+      &>*:#{$child}-child {
+        margin-#{$direction}: 0;
+      }
+    }
+  }
+}

@@ -33,7 +33,7 @@
     },
     img: {
     //   src: './src/assets/img/**/*',
-      src: './src/assets/img/**/*.{jpg,jpeg,png,svg,gif,webp}',
+      src: './src/assets/img/**/*.{jpg,jpeg,png,svg,gif,webp,ico}',
       dist: './dist/assets/img'
     },
     html: {

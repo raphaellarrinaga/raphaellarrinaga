@@ -31,6 +31,10 @@
       src: './src/assets/files/**/*',
       dist: './dist/assets/files'
     },
+    fonts: {
+      src: './src/assets/fonts/**/*',
+      dist: './dist/assets/fonts'
+    },
     img: {
     //   src: './src/assets/img/**/*',
       src: './src/assets/img/**/*.{jpg,jpeg,png,svg,gif,webp,ico}',
@@ -99,6 +103,14 @@
   }
 
   exports.files = files;
+
+  function fonts() {
+    return gulp
+      .src(paths.fonts.src)
+      .pipe(gulp.dest(paths.fonts.dist));
+  }
+
+  exports.fonts = fonts;
 
   function compileHtml() {
     return gulp
@@ -175,7 +187,7 @@
   const dev = gulp.series(serve, watch);
   exports.dev = dev;
 
-  const dist = gulp.series(compileHtml, compileCSS, images, files, copyRedirects);
+  const dist = gulp.series(compileHtml, compileCSS, images, files, fonts, copyRedirects);
   exports.dist = dist;
 
   // Global task: $ gulp.

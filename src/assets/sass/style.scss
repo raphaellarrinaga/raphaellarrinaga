@@ -12,6 +12,14 @@
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family: AlphaLyrae;
+  src: url('/assets/fonts/AlphaLyrae/AlphaLyrae-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: semibold;
+  font-display: swap
+}
+
 :root {
   font-size: 20px;
   line-height: 1.5;
@@ -27,6 +35,8 @@
   --color-button-text-hover: color-mix(in oklab, var(--color-secondary), black 50%);
   --color-bg-secondary: #F7F0FF;
   --font-size-button: .8rem;
+  --font-base: "Nunito Sans", sans-serif;
+  --font-titles: "AlphaLyrae", monospace;
 }
 
 // HTML Elements
@@ -35,9 +45,11 @@ body {
   background: var(--color-page);
   box-sizing: border-box;
   color: var(--color-text);
-  font-family:'Nunito Sans', sans-serif;
+  font-family: var(--font-base);
   font-optical-sizing: auto;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -64,7 +76,8 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
-  font-weight: 700;
+  font-family: var(--font-titles);
+  letter-spacing: .05em;
   line-height: 1.2;
   margin-bottom: 1.2em;
   margin-top: 0;
@@ -92,7 +105,7 @@ p {
   font-size: 1.3rem;
 
   @include a.bp(a.$bp-medium) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-left: 5.5rem;
     max-width: 45rem;
   }
@@ -277,7 +290,7 @@ p {
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   ul {
@@ -355,7 +368,7 @@ p {
   }
 
   h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 

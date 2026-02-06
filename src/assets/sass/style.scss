@@ -13,9 +13,9 @@
 }
 
 @font-face{
-  font-family: AlphaLyrae;
-  src: url('/assets/fonts/AlphaLyrae/AlphaLyrae-Medium.woff2') format('woff2');
-  font-weight: 700;
+  font-family: ApfelGrotezk;
+  src: url('/assets/fonts/AlphaLyrae/ApfelGrotezk-Mittel.woff2') format('woff2');
+  font-weight: 600;
   font-style: semibold;
   font-display: swap
 }
@@ -36,7 +36,7 @@
   --color-bg-secondary: #F7F0FF;
   --font-size-button: .8rem;
   --font-base: "Nunito Sans", Helvetica, sans-serif;
-  --font-titles: "AlphaLyrae", Helvetica, sans-serif;
+  --font-titles: "ApfelGrotezk", Helvetica, sans-serif;
 }
 
 // HTML Elements
@@ -77,6 +77,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
   font-family: var(--font-titles);
+  // font-weight: bold;
   letter-spacing: .05em;
   line-height: 1.2;
   margin-bottom: 1.2em;

@@ -15,7 +15,7 @@
 @font-face{
   font-family: AlphaLyrae;
   src: url('/assets/fonts/AlphaLyrae/AlphaLyrae-Medium.woff2') format('woff2');
-  font-weight: 400;
+  font-weight: 700;
   font-style: semibold;
   font-display: swap
 }
@@ -35,8 +35,8 @@
   --color-button-text-hover: color-mix(in oklab, var(--color-secondary), black 50%);
   --color-bg-secondary: #F7F0FF;
   --font-size-button: .8rem;
-  --font-base: "Nunito Sans", sans-serif;
-  --font-titles: "AlphaLyrae", monospace;
+  --font-base: "Nunito Sans", Helvetica, sans-serif;
+  --font-titles: "AlphaLyrae", Helvetica, sans-serif;
 }
 
 // HTML Elements

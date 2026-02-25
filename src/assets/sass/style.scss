@@ -209,45 +209,39 @@ p {
 }
 
 .service-groups {
-  @include a.bp(a.$bp-small) {
-    column-count: 2;
-    column-gap: 1rem;
-    width: 100%;
-  }
-
   @include a.bp(a.$bp-medium) {
-    column-count: 3;
-    column-gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 
   @include a.bp(a.$bp-big) {
-    column-count: 4;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
 
   p {
     padding: .5rem 0 1rem;
 
     @include a.bp(a.$bp-medium) {
+      padding: 1rem;
+    }
+
+    @include a.bp(a.$bp-big) {
       padding: 1.75rem;
     }
   }
 
-  >*:nth-child(2n) {
-    @include a.bp(a.$bp-big) {
-      break-after: column;
-    }
-  }
-
   @include a.bp(a.$bp-big) {
-    >*:nth-child(3) {
+    >*:nth-child(2) {
       margin-top: 2rem;
     }
 
-    >*:nth-child(5) {
+    >*:nth-child(3) {
       margin-top: 5.5rem;
     }
 
-    >*:nth-child(7) {
+    >*:nth-child(4) {
       margin-top: 1.8rem;
     }
   }
@@ -261,12 +255,12 @@ p {
   &:nth-child(2n) {
     margin-left: 4%;
 
-    @include a.bp(a.$bp-medium) {
+    @include a.bp(a.$bp-big) {
       margin-left: 0;
     }
   }
 
-  @include a.bp(a.$bp-medium) {
+  @include a.bp(a.$bp-big) {
     display: block;
     margin-bottom: 1.5rem;
     width: 100%;
